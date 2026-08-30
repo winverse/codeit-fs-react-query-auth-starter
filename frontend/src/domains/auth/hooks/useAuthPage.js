@@ -16,7 +16,6 @@ export default function useAuthPage() {
   const [mode, setMode] = useState(AUTH_MODE.SIGN_UP);
   const [formError, setFormError] = useState("");
   const [formSuccess, setFormSuccess] = useState("");
-  const [createdEmail, setCreatedEmail] = useState("");
   const [signUpForm, setSignUpForm] = useState(() => ({
     ...AUTH_INITIAL_SIGN_UP_FORM,
   }));
@@ -87,7 +86,6 @@ export default function useAuthPage() {
 
     try {
       const createdUser = await signUp(payload);
-      setCreatedEmail(createdUser.email);
       setFormSuccess(`회원가입 완료: ${createdUser.email}`);
       resetSignUpFormState();
     } catch (error) {
@@ -166,7 +164,6 @@ export default function useAuthPage() {
     mode,
     formError,
     formSuccess,
-    createdEmail,
     signUpForm,
     loginForm,
     signUpErrors,
