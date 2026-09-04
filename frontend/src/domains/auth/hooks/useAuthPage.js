@@ -46,6 +46,7 @@ export default function useAuthPage() {
     const { name, value } = event.target;
 
     setFormError((prev) => (prev ? "" : prev));
+    setFormSuccess((prev) => (prev ? "" : prev));
     setSignUpErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -60,6 +61,7 @@ export default function useAuthPage() {
     const { name, value } = event.target;
 
     setFormError((prev) => (prev ? "" : prev));
+    setFormSuccess((prev) => (prev ? "" : prev));
     setLoginErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -146,6 +148,7 @@ export default function useAuthPage() {
 
   const handleLogout = async () => {
     setFormError("");
+    setFormSuccess("");
     setIsLogoutPending(true);
 
     try {
