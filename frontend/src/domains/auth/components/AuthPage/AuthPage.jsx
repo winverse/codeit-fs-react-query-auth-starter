@@ -1,10 +1,10 @@
 "use client";
 
 import * as styles from "./AuthPage.css.js";
-import AuthHero from "@/domains/auth/components/AuthHero";
-import AuthModeSwitch from "@/domains/auth/components/AuthModeSwitch";
-import LoginForm from "@/domains/auth/components/LoginForm";
-import SignUpForm from "@/domains/auth/components/SignUpForm";
+import { AuthHero } from "@/domains/auth/components/AuthHero";
+import { AuthModeSwitch } from "@/domains/auth/components/AuthModeSwitch";
+import { LoginForm } from "@/domains/auth/components/LoginForm";
+import { SignUpForm } from "@/domains/auth/components/SignUpForm";
 import useAuthPage from "@/domains/auth/hooks/useAuthPage";
 import { AUTH_MODE } from "@/domains/auth/utils/constants";
 
