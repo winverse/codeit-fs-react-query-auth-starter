@@ -4,13 +4,13 @@ import {
   AUTH_INITIAL_LOGIN_FORM,
   AUTH_INITIAL_SIGN_UP_FORM,
   AUTH_MODE,
-} from "@/domains/auth/utils/constants";
+} from "@/features/auth/utils/constants";
 import {
   createEmptyLoginErrors,
   createEmptySignUpErrors,
   validateLoginForm,
   validateSignUpForm,
-} from "@/domains/auth/utils/validation";
+} from "@/features/auth/utils/validation";
 
 export default function useAuthPage() {
   const [mode, setMode] = useState(AUTH_MODE.SIGN_UP);
