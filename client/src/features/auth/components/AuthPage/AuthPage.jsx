@@ -53,7 +53,7 @@ export default function AuthPage() {
       <div className={styles.backdropCircleTwo} />
 
       <AuthHero
-        authStatusText="세션 조회를 추가하기 전입니다."
+        authStatusText="로그인 상태 조회를 추가하기 전입니다."
         isAuthError={false}
         isAuthenticated={false}
       />
